@@ -35,10 +35,8 @@ class Car implements Comparable<Car> {
 
 public class Main {
     public static void main(String[] args) {
-        // Tworzenie kolekcji ArrayList
         List<Car> cars = new ArrayList<>();
 
-        // Dodawanie 10 obiektów klasy Car do kolekcji
         cars.add(new Car("Toyota Corolla", 2010));
         cars.add(new Car("Honda Civic", 2015));
         cars.add(new Car("Ford Focus", 2012));
@@ -50,10 +48,8 @@ public class Main {
         cars.add(new Car("Subaru Impreza", 2017));
         cars.add(new Car("Kia Forte", 2019));
 
-        // Sortowanie kolekcji
         Collections.sort(cars);
 
-        // Wyświetlanie posortowanej listy za pomocą pętli for-each
         for (Car car : cars) {
             System.out.println(car);
         }
